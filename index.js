@@ -8,7 +8,7 @@ function getUserChoice(){
     return input;
 }
 function getComputerChoice(){
-    let a=Math.random()*3;
+    let a=Math.floor(Math.random()*3);
     if(a===0){
         alert("computer chose rock")
         return 'rock';
@@ -28,7 +28,7 @@ let computerChoice=getComputerChoice()
 
     if((userChoice==='rock'&&computerChoice==='rock')||(userChoice==='paper'&&computerChoice==='paper')||(userChoice==='scissor'&&computerChoice==='scissor')){
     alert("its a draw");
-    continue;
+
 }
 else if(userChoice==='scissor'&&computerChoice==='paper'){
     
